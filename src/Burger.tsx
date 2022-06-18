@@ -3,6 +3,8 @@ import { BurgerProps } from './'
 
 const area = 48
 
+const display = 'none';
+
 export const Burger = (({
   color = 'currentColor',
   direction = 'left',
@@ -42,7 +44,7 @@ export const Burger = (({
   const time = Math.max(0, duration)
 
   const burgerStyles: CSSProperties = {
-    cursor: 'pointer',
+    cursor: `${display}`,
     height: `${area}px`,
     position: 'relative',
     transition: `${time}s ${easing}`,
